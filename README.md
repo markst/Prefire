@@ -1,4 +1,4 @@
-![Prefire](https://i.postimg.cc/BQWJZPJs/Frame-16.jpg)
+![Prefire](https://i.postimg.cc/Y9cbLVY4/temp-Image-P7o5-NQ.jpg)
 
 <p align="center">A library for easily generating automatic <b>Playbook (Demo) view</b> and <b>Tests</b> using <b>SwiftUI Preview</b></p>
 <p align="center">Works with: <b>UI-components, screens and flows</b></p>
@@ -107,12 +107,13 @@ struct ContentView: View {
 ### **Snapshot tests**
 
 Just run generated tests 🚀
+And all tests will be generated in DerivedData.
 
 <img src="https://i.postimg.cc/XNPVPL1G/Untitled-2.gif" width="300">
 
 Plugin `PrefireTestsPlugin` will do everything for you 🛠️
 
-For detailed instruction you can see [swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing)
+For detailed instruction you can see [swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing) or examine an example project.
 
 ---
 
@@ -134,7 +135,7 @@ New commands for previews:
 
 - Function for connecting preview together in one **Flow**:
 
-    <img src="https://i.postimg.cc/13psFbHt/Group-48095410-2.jpg" width="350" align="right">
+    <img src="https://i.postimg.cc/jSh23G8W/temp-Image9a-EDKU.avif" width="350" align="right">
 
     ```swift
     .previewUserStory(.auth)
@@ -158,7 +159,7 @@ New commands for previews:
 
 - If a preview contains more than one `View`, you can mark `State` for these views.
 
-    <img src="https://i.postimg.cc/wB8ndkSs/Group-48095410.jpg" width="350" align="right">
+    <img src="https://i.postimg.cc/Z5JKNwTJ/temp-Imageh19pin.avif" width="350" align="right">
 
     ```swift
     .previewState(.loading)
@@ -190,7 +191,7 @@ test_configuration:
   - required_os: 16
 ```
 - `target` - Your project Target for Snapshot tests. __Default__: _FirstTarget_
-- `test_file_path` - Filepath to generated file. __Default__: _DeriveData_
+- `test_file_path` - Filepath to generated file (⚠️ Not compatible with Xcode 15). __Default__: _DerivedData_
 - `template_file_path` - Stencil file for generated file. Optional parameter. __Default__: _Templates/PreviewTests.stencil_ from the package
 - `simulator_device` - Device for Snapshot testing. __Default__: _iPhone 14 Pro_
 - `required_os` - iOS version for Snapshot testing. __Default__: _iOS 16_
