@@ -18,10 +18,6 @@ let package = Package(
         .plugin(
             name: "PrefireTestsPlugin",
             targets: ["PrefireTestsPlugin"]
-        ),
-        .executable(
-            name: "PrefireSourcery",
-            targets: ["PrefireSourcery"]
         )
     ],
     targets: [
